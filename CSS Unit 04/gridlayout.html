@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        main{
+            display: grid;
+            grid-template-rows: 7rem 7rem 14rem 7rem 7rem;
+            gap:10px;
+        }
+        .box{
+            background-color: bisque;
+            border-radius: 20px;
+        }
+        .section{
+            display: grid;
+            grid-template-columns: 600px auto;
+            gap: 10px;
+        }
+        #left{
+            background-color: gray;
+            border-radius: 20px;
+        }
+        #right{
+            background-color: gray;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <div class="box"><h2>Header</h2></div>
+    <div class="box"><h2>Nav</h2></div>
+    <div class="section">
+        <div id="left">
+            <article><h2>Article</h2></article>
+            <aside><h2>Aside</h2></aside>
+        </div>
+        <div id="right"><h2>right</h2></div>
+    </div>
+    <div class="box"><h2></h2></div>
+    <div class="box"><h2></h2></div>
+</main>
+</body>
+</html>
